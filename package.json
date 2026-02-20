@@ -1,0 +1,54 @@
+{
+  "name": "quarto-mov-abs-elems",
+  "displayName": "Quarto Move Abs Elems",
+  "description": "Update Quarto absolute positioning elements via drag and drop",
+  "version": "0.0.2",
+  "publisher": "herosi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herosi/move-abs-elems-vsc.git"
+  },
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "nodeOptions": [
+    "--no-deprecation"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "quarto-mov-abs-elems.startServer",
+        "title": "Quarto: Start Move Abs Elems Server"
+      },
+      {
+        "command": "quarto-mov-abs-elems.stopServer",
+        "title": "Quarto: Stop Move Abs Elems Server"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.8",
+    "@types/vscode": "^1.108.1",
+    "@vscode/vsce": "^3.7.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}

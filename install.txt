@@ -1,0 +1,11 @@
+# NOTE: pnpm is not supported (due to vsce restrictions).
+# Please use npm (or yarn) instead.
+
+# Install dependencies
+npm install
+
+# Compile TypeScript
+npm run compile
+
+# Generate the VSIX package
+npx vsce package --allow-missing-repository

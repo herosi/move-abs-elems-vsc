@@ -1,0 +1,15 @@
+# NOTE: DO NOT USE `pnpm` for creating vsix with vsce. It WILL FAIL to create vsix because of dependency errors.
+
+# check package.json
+# check the packages needed to update
+npm outdated
+
+# update the deps
+npm update
+
+# if you want to use a past version, you can get the list with a package name
+# check the dependency package versions
+npm view @types/vscode versions
+
+# if you want to clear the cache of packages, use this
+npm cache clean --force

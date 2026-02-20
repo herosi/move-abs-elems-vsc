@@ -1,0 +1,17 @@
+.vscodeignore
+package-lock.json
+install.txt
+update-deps.txt
+tsconfig.json
+src/
+.vscode/
+out/*.map
+
+node_modules/@types/**
+node_modules/**/*.map
+node_modules/**/*.md
+*.vsix
+*.old
+*.tmp
+*.zip
+README_dev.md
